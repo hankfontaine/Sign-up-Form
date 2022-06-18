@@ -2,6 +2,7 @@ html,
 body {
  margin: 0;
  padding: 0;
+ background-color: black;
 }
 
 .background {
@@ -112,3 +113,20 @@ a:active {
     margin: 20px;
     font-size: large;
 }
+
+input:focus {
+    border: 3px solid blue;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+
+/* #phoneNumber:valid {
+    border: 10px solid green;
+} */
+
+.requiredText {
+    font-size: small;
+}
+

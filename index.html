@@ -25,7 +25,7 @@
                     </div>
                     <div class="formEntryField">
                         <div class="formEntryFieldLeft">
-                            <form action="example.com" method="post">
+                            <form action="example.com" method="post" class="form">
                                 <div>
                                     <label for="firstName">First Name:</label>
                                 </div>
@@ -39,7 +39,7 @@
                                     <input type="text" id="lastName" placeholder="last name here!">
                                 </div>
                                 <div>
-                                    <label for="email">Email Address:</label>
+                                    <label for="email" aria-required="true">*Email Address:</label>
                                 </div>
                                 <div>
                                     <input type="email" id="email" placeholder="email address here!">
@@ -47,31 +47,35 @@
                         </div>
                         <div class="formEntryFieldRight">
                             <div>
-                                <label for="phoneNumber">Phone Number:</label>
+                                <label for="phoneNumber" aria-required="true">Phone Number:</label>
                             </div>
                             <div>
-                                <input type="text" id="phoneNumber" minlength="10" maxlength="10"
-                                    placeholder="phone number here!">
+                                <input type="text" id="phoneNumber" minlength="10" placeholder="phone number here!">
                             </div>
                             <div>
-                                <label for="passwordOne">Enter Password:</label>
+                                <label for="passwordOne">*Enter Password:</label>
                             </div>
                             <div>
-                                <input type="password" id="passwordOne" placeholder="must include a number">
+                                <input type="password" id="passwordOne" class="passwordOne"
+                                    placeholder="must be at least ten characters" minlength="10" required>
                             </div>
                             <div>
-                                <label for="passwordTwo">Confirm Password:</label>
+                                <label for="passwordTwo">*Confirm Password:</label>
                             </div>
                             <div>
-                                <input type="password" id="passwordTwo" placeholder="must match.">
+                                <input type="password" id="passwordTwo" class="passwordTwo"
+                                    placeholder="must match the first entry." required>
                             </div>
+                            <div class="requiredText">*required</div>
                         </div>
-                        </form>
+
                     </div>
                 </div>
                 <div class="submitArea">
                     <div>
-                        <button class="createAccountButton">CREATE ACCOUNT</button>
+                        <button type="submit" class="createAccountButton">CREATE
+                            ACCOUNT</button>
+                        </form>
                     </div>
                     <div class="signIn">
                         Already got an account? <a href="http://hankfontaine.com" class="signInLink">Sign in
