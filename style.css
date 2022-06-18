@@ -1,3 +1,114 @@
+html,
 body {
-    background-color: aqua;
+ margin: 0;
+ padding: 0;
+}
+
+.background {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    ;
+}
+
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.picturePanel {
+    display: flex;
+    flex-direction: column;
+    background-image: url("2021.jpg");
+    height: 100vh;
+    width: 20vw;
+}
+
+.overlayLogoDiv {
+    color: pink;
+    position: static;
+    margin-top: 50vh;
+    margin-left: 0;
+    width: 20vw;
+    opacity: 0.7;
+    vertical-align:middle;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.spiralPic {
+    width: 60px;
+    height: 60px;
+}
+
+.creditDiv {
+    font-size: 20px;
+    color: white;
+    position: static;
+    margin-top: 35vh;
+    margin-left: 5vw;
+    opacity: .5;
+    width: 20vw;
+    bottom: 10px;
+}
+
+.formAndSubmitArea {
+    background-color: rgb(123, 54, 54);
+    height: 100vh;
+    width: 60vh;
+    margin: 0;
+    padding: 0;
+}
+
+.headerArea {
+    margin-top: 30vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formEntryField {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.formEntryFieldLeft, .formEntryFieldRight {
+    padding: 10px;
+}
+
+.formArea {
+    background-color: rgb(104, 18, 18);
+    height: 80vh;
+    box-sizing: border-box;
+    border: 10px solid black;
+    color: white;
+    /* font-size: large; */
+}
+
+.submitArea {
+    box-sizing: border-box;
+    border: 10px solid black;
+    height: 20vh;
+}
+
+.createAccountButton {
+    margin: 20px;
+    background-color: black;
+    color: beige;
+}
+
+a {
+    color: black;
+}
+
+a:active {
+    color: purple;
+}
+
+.signIn {
+    margin: 20px;
+    font-size: large;
 }
